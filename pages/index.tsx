@@ -1,7 +1,4 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
-import 'leaflet/dist/leaflet.css';
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
 import dynamic from 'next/dynamic'
 import Link from 'next/link';
 import { events } from '@/data/events';
@@ -16,7 +13,7 @@ export default function Home() {
     <>
       <main>
         <div className="bg-slate-950 text-yellow-500 h-20 flex justify-between items-center px-7">
-          <p className='font-bold text-xl'>APP NAME</p>
+          <p className='font-bold text-xl'>CampusFest</p>
           {user ?
           <div className='flex'>
             <p className='mr-4'>{user.name}</p>

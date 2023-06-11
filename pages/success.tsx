@@ -7,7 +7,7 @@ export default function Success() {
     return (
         <main>
             <div className="bg-slate-950 text-yellow-500 h-20 flex justify-between items-center px-7">
-            <p className='font-bold text-xl'>APP NAME</p>
+            <p className='font-bold text-xl'>CampusFest</p>
             {user ?
             <div className='flex'>
                 <p className='mr-4'>{user.name}</p>
