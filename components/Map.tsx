@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import 'leaflet/dist/leaflet.css';
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import { events } from '@/data/events';
 
@@ -26,7 +23,7 @@ export default function Map() {
             {events.map(event => (
                 <Marker position={{lat: event.latitude, lng: event.longitude}}>
                     <Popup>
-                        <p>{event.name}</p>
+                        <p className='font-semibold mb-0'>{event.name}</p>
                         <p>{event.location}</p>
                         <p>{event.date}</p>
                         <p>{event.time}</p>

@@ -1,0 +1,7 @@
+.leaflet-pane, .leaflet-popup, .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    box-shadow: none;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    border: 1px solid rgb(197, 197, 197);
+}

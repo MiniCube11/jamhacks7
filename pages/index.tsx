@@ -1,5 +1,7 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
-import Head from 'next/head';
+import 'leaflet/dist/leaflet.css';
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
 import dynamic from 'next/dynamic'
 import Link from 'next/link';
 import { events } from '@/data/events';
